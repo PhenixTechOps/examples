@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Publish to Channel</title>
+    <!-- Include the Phenix SDK, not for production use -->
+    <script src="https://dl.phenixrts.com/WebSDK/2022.0.latest/phenix-web-sdk.min.js"></script>
+    <script>
+      var __phenixPageLoadTime = new Date().getTime();
+    </script>
+  </head>
+  <body class="main">
+    <h1>Phenix Channel Publish Example</h1>
+    <video
+      id="myVideoId"
+      width="1280"
+      height="720"
+      playsinline
+      autoplay
+      muted
+    ></video>
+    <br />
+    <button id="publishButton" class="publisher">Publish</button>
+    <button id="stopButton" class="stop-publisher hide">Stop</button>
+    <p id="userMessage"></p>
+    <script src="main.js"></script>
+  </body>
+</html>
