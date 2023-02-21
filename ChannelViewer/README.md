@@ -25,7 +25,9 @@ There are no outside dependencies.
 
 `const token = 'AUTH_TOKEN';`
 
-4. Save, then open a browser.
+Optionally, you can add the token as a url parameter by adding `?token=AUTH_TOKEN` to the url, replaceing `AUTH_TOKEN` with your token.
+
+1. Save, then open a browser.
 
 ## Help
 

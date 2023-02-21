@@ -6,7 +6,7 @@
 
 // create viewing token by using the customer portal in a channel's edgeAuth section.
 // replace AUTH_TOKEN with your own token.
-const token = 'AUTH_TOKEN';
+const token = new URLSearchParams(location.search).get('token') || 'AUTH_TOKEN';
 
 // create a reference to the html video element
 const videoElement = document.getElementById('myVideoId');
