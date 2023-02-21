@@ -27,7 +27,7 @@ There are no outside dependencies.
 
 Optionally, you can add the token as a url parameter by adding `?token=AUTH_TOKEN` to the url, replaceing `AUTH_TOKEN` with your token.
 
-1. Save, then open a browser.
+4. Save, start local server and then open in a browser.
 
 ## Help
 
