@@ -1,0 +1,31 @@
+import Subject from '../../rx/Subject';
+import PublisherState from './PublisherState';
+import EndPoint, { IStream } from '../discovery/EndPoint';
+import DisposableList from '../../lang/DisposableList';
+import { PublishStatus } from '../api/Publish';
+import { IRtcPublishMonitorStatistic, IRtcPublishStatistic } from '../../rtc/RtcPublishMonitor';
+export default class PublisherContext {
+    publisherInitialization: Date;
+    disposables: DisposableList;
+    publisherDisposables: DisposableList;
+    state: Subject<PublisherState>;
+    authorized: Subject<boolean>;
+    online: Subject<boolean>;
+    loading: Subject<boolean>;
+    publishing: Subject<boolean>;
+    standby: Subject<boolean>;
+    stopped: Subject<boolean>;
+    failureCount: Subject<number>;
+    endPoint: Subject<EndPoint>;
+    stream: Subject<IStream>;
+    rtcStatistics: Subject<IRtcPublishMonitorStatistic>;
+    clearFailureCountTimeout: number;
+    name: string;
+    rtcAudioStatistic: IRtcPublishStatistic;
+    rtcVideoStatistic: IRtcPublishStatistic;
+    constructor(name?: string);
+    get streamId(): string;
+    applyStatus(status: PublishStatus): void;
+    mapPublishStatusToPublisherStatus(status: PublishStatus): PublisherState;
+    private generateScreenName;
+}
