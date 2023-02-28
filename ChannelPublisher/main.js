@@ -5,9 +5,9 @@
  */
 
 // create an auth and publish token by using the customer portal in a channel's edgeAuth section.
-var authToken = 'AUTH_TOKEN';
+var authToken = new URLSearchParams(location.search).get('authtoken') ||'AUTH_TOKEN';
 
-var publishToken = 'PUBLISH_TOKEN';
+var publishToken = new URLSearchParams(location.search).get('publishtoken') ||'PUBLISH_TOKEN';
 
 //create reference to the Phenix SDK
 var sdk = window['phenix-web-sdk'];
