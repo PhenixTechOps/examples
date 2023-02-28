@@ -2,7 +2,7 @@
 
 ## Description
 
-Code examples for standard use cases and application integrations to Phenix.
+Code examples for common use cases and application integrations to Phenix.
 
 ## Getting Started
 
@@ -12,17 +12,19 @@ There are no outside dependencies.
 
 ## How to use
 
-- A webserver or localhost to run examples.
-- Run on JSFiddle.
+Run this code using:
+
+- A webserver or localhost, or
+- JSFiddle.
 
 # Instructions
 
-- each example requires a token. You can acquire a token from the customer portal.
-- v1 publishing example requires an auth token as well as publishing token.
+- Each example requires a token. You can create a token from the Phenix Customer Portal or using the [Phenix EdgeAuth SDK](https://github.com/PhenixRTS/EdgeAuth).
+- The v1 publishing example requires an auth token as well as publishing token.
 
 ## Help
 
-Please use slack if you have any questions.
+Please contact Phenix via Slack if you have any questions.
 
 ## Authors
 
