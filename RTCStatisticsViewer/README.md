@@ -1,4 +1,4 @@
-#Phenix RTS RTC Stats Viewing Example
+## Phenix RTS RTC Stats Viewing Example
 
 # Purpose
 
