@@ -17,7 +17,7 @@ There are no outside dependencies.
 
 # Instructions
 
-1. Publish multiple streams using the customer portal.ß
+1. Publish multiple streams using the customer portal.
 2. Generate viewing tokens in the Customer portal under the edgeAuth tab.
 3. Save, start local server and then open in a browser.
 4. Add a viewing token to the text input field and click add channel.
