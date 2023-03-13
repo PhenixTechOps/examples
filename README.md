@@ -14,8 +14,9 @@ There are no outside dependencies.
 
 Run this code using:
 
-- A webserver or localhost, or
-- JSFiddle.
+- Copy to your webserver or localhost webserver
+- Run directly from phenix-techops-examples.pages.dev
+- Copy into a JSFiddle
 
 # Instructions
 
