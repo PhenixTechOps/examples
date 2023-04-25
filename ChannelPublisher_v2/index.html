@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Optional: Initialize environment based on URL parameter `token` -->
+    <meta name="phenix-channel-token-uri-parameter-name" value="token" />
+    <script>
+      __phenixPageLoadTime = new Date().getTime();
+    </script>
+    <script src="../SDK/JsSDK/2023.0.latest/min/publish.js"></script>
+  </head>
+
+  <body style="margin: 0">
+    <video
+      style="width: 100vw; height: calc(100vh - 50px); background: black"
+      controls
+      muted
+      autoplay
+      playsinline
+    ></video>
+    <div
+      style="
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      "
+    >
+      <div>
+        <button id="stop" style="margin: 5px">Stop</button>
+        <button id="start" style="margin: 5px; display: none">Start</button>
+        <span>State: <span id="state"></span></span>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
