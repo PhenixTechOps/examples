@@ -16,18 +16,16 @@ There are no outside dependencies.
 
 # Instructions
 
-1. Generate an auth token and publish token in the Customer portal under the edgeAuth tab by selecting "publish".
+1. Generate a publish token in the Customer portal under the edgeAuth tab by selecting "publish".
 
 2. Open main.js.
-3. Replace the `AUTH_TOKEN` value with the auth token created.
-4. Replace the `PUBLISH_TOKEN` value with the publishing token created.
+3. Replace the `TOKEN` value with the publish token created.
 
 ```
-var authToken = new URLSearchParams(location.search).get('authtoken') || 'AUTH_TOKEN';
-var publishToken = new URLSearchParams(location.search).get('publishtoken') ||'PUBLISH_TOKEN';
+var token = new URLSearchParams(location.search).get('token') || 'TOKEN';
 ```
 
-Optionally, you can add the tokens as a url parameter by adding `?authtoken=AUTH_TOKEN&publishtoken=PUBLISH_TOKEN` to the url, replaceing `AUTH_TOKEN` and `PUBLISH_TOKEN` with the tokens generated.
+Optionally, you can add the tokens as a url parameter by adding `?token=TOKEN` to the url, replaceing `TOKEN` with the token generated.
 
 1. Save, start local server and then open in a browser.
 

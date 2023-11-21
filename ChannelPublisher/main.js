@@ -4,10 +4,8 @@
  * https://phenixrts.com/en-us/terms-of-service.html
  */
 
-// create an auth and publish token by using the customer portal in a channel's edgeAuth section.
-var authToken = new URLSearchParams(location.search).get('authtoken') ||'AUTH_TOKEN';
-
-var publishToken = new URLSearchParams(location.search).get('publishtoken') ||'PUBLISH_TOKEN';
+// create a token by using the customer portal in a channel's edgeAuth section.
+var token = new URLSearchParams(location.search).get('token') ||'TOKEN';
 
 //create reference to the Phenix SDK
 var sdk = window['phenix-web-sdk'];
@@ -15,12 +13,6 @@ var videoElement = document.getElementById('myVideoId');
 var publishButton = document.getElementById('publishButton');
 var stopButton = document.getElementById('stopButton');
 var publisher = null;
-
-// Alias to be used to publish/create/join channel
-var channelAlias = 'testAlias';
-
-// Name of the channel
-var channelName = 'testName';
 
 // Local media to publish (camera and microphone)
 var mediaConstraints = {
@@ -39,14 +31,9 @@ var channel = new sdk.express.ChannelExpress(channelExpressOptions);
 // create publish options, documentation:
 // https://phenixrts.com/docs/sdk_ref/web/express-channel/#publish-to-channel-options
 var publishOptions = {
-  room: {
-    alias: channelAlias,
-    name: channelName
-  },
   mediaConstraints: mediaConstraints,
   videoElement: videoElement,
-  authToken: authToken,
-  publishToken: publishToken
+  token: publishToken,
 };
 
 // Publish local media to channel
