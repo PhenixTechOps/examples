@@ -25,9 +25,19 @@ There are no outside dependencies.
 
 `const token = 'AUTH_TOKEN';`
 
+4. Save, start local server and then open in a browser.
+
 Optionally, you can add the token as a url parameter by adding `?token=AUTH_TOKEN` to the url, replaceing `AUTH_TOKEN` with your token.
 
-4. Save, start local server and then open in a browser.
+
+1. Open [http://phenix-techops-examples.pages.dev/ChannelViewer.html](http://phenix-techops-examples.pages.dev/ChannelViewer.html)
+2. Add `?token=` to the end of the URL and and paste in your generated `TOKEN`.
+
+```
+http://phenix-techops-examples.pages.dev/ChannelViewer.html?token=DIGEST:...
+```
+
+
 
 ## Help
 

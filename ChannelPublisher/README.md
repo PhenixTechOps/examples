@@ -17,17 +17,25 @@ There are no outside dependencies.
 # Instructions
 
 1. Generate a publish token in the Customer portal under the edgeAuth tab by selecting "publish".
-
 2. Open main.js.
 3. Replace the `TOKEN` value with the publish token created.
 
 ```
 var token = new URLSearchParams(location.search).get('token') || 'TOKEN';
 ```
-
-Optionally, you can add the tokens as a url parameter by adding `?token=TOKEN` to the url, replaceing `TOKEN` with the token generated.
-
+Run:
 1. Save, start local server and then open in a browser.
+
+Optionally, add the tokens as a url parameter by adding `?token=TOKEN` to the url, replaceing `TOKEN` with the token generated.
+
+1. Open [http://phenix-techops-examples.pages.dev/ChannelPublisher.html](http://phenix-techops-examples.pages.dev/ChannelPublisher.html)
+2. Add `?token=` to the end of the URL and and paste in your generated `TOKEN`.
+
+```
+http://phenix-techops-examples.pages.dev/ChannelPublisher.html?token=DIGEST:...
+```
+
+
 
 ## Help
 
