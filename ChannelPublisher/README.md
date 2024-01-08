@@ -28,11 +28,11 @@ Run:
 
 Optionally, add the tokens as a url parameter by adding `?token=TOKEN` to the url, replaceing `TOKEN` with the token generated.
 
-1. Open [http://phenix-techops-examples.pages.dev/ChannelPublisher.html](http://phenix-techops-examples.pages.dev/ChannelPublisher.html)
-2. Add `?token=` to the end of the URL and and paste in your generated `TOKEN`.
+1. Open [http://phenix-techops-examples.pages.dev/ChannelPublisher/?token=](http://phenix-techops-examples.pages.dev/ChannelPublisher/?token=)
+2. Add your generated token to the end of the url and load the html page.
 
 ```
-http://phenix-techops-examples.pages.dev/ChannelPublisher.html?token=DIGEST:...
+http://phenix-techops-examples.pages.dev/ChannelPublisher/?token=DIGEST:...
 ```
 
 

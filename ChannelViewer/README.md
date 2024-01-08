@@ -30,11 +30,11 @@ There are no outside dependencies.
 Optionally, you can add the token as a url parameter by adding `?token=AUTH_TOKEN` to the url, replaceing `AUTH_TOKEN` with your token.
 
 
-1. Open [http://phenix-techops-examples.pages.dev/ChannelViewer.html](http://phenix-techops-examples.pages.dev/ChannelViewer.html)
-2. Add `?token=` to the end of the URL and and paste in your generated `TOKEN`.
+1. Open [http://phenix-techops-examples.pages.dev/ChannelViewer/?token=](http://phenix-techops-examples.pages.dev/ChannelViewer/?token=)
+2. Add your generated token to the end of the url and load the html page.
 
 ```
-http://phenix-techops-examples.pages.dev/ChannelViewer.html?token=DIGEST:...
+http://phenix-techops-examples.pages.dev/ChannelViewer/?token=DIGEST:...
 ```
 
 
