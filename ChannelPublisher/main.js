@@ -5,7 +5,9 @@
  */
 
 // create a token by using the customer portal in a channel's edgeAuth section.
-var token = new URLSearchParams(location.search).get('token') ||'TOKEN';
+//var token = new URLSearchParams(location.search).get('token') ||'TOKEN';
+var authToken = new URLSearchParams(location.search).get('authToken') ||'AUTHTOKEN'; 
+var publishToken = new URLSearchParams(location.search).get('publishToken') ||'TOKEN'; 
 
 //create reference to the Phenix SDK
 var sdk = window['phenix-web-sdk'];
@@ -20,9 +22,11 @@ var mediaConstraints = {
   audio: true // Include microphone
 };
 
+
 // add the auth token to the channel express options
 var channelExpressOptions = {
-  authToken: authToken
+  authToken: authToken,
+  disableConsoleLogging: false, //set to true to disable console logging
 };
 
 // Instantiate the instance of the channel express
